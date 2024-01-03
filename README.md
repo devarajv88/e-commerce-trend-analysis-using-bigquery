@@ -33,6 +33,9 @@ The dataset is available in the [Google Drive folder](https://drive.google.com/d
 ## Dataset schema
 Dataset schema for the data provided above can be acced from [**here**](https://drive.google.com/file/d/1fMIzsB2AN5Cwu8EUt8bU3LYUc6w3NCI-/view?usp=drive_link)
 
+![schema](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/73c0c8c7-57f0-480a-9cb2-8c187aa66e68)
+
+
 ## Tech Stack
 
 - **SQL:** Used for querying the dataset and extracting relevant information.
