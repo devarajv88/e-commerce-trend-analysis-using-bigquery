@@ -1,4 +1,4 @@
-# sql-bigquery-project
+# E-commerce Trend Analysis
 <br>
 Context:
 <br>
