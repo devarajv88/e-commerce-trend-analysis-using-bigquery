@@ -31,22 +31,6 @@ The dataset is available in the [Google Drive folder](https://drive.google.com/d
 
 ## Dataset schema
 Dataset schema for the data provided above can be acced from [**here**](https://drive.google.com/file/d/1fMIzsB2AN5Cwu8EUt8bU3LYUc6w3NCI-/view?usp=drive_link)
-
-## Data Exploration and Analysis
-
-### a. Initial Exploration
-
-### b. In-depth Exploration
-
-### c. Evolution of E-commerce Orders in Brazil
-
-### d. Impact on Economy
-
-### e. Analysis on Sales, Freight and Delivery Time
-
-### f. Analysis Based on Payments
-
-## Actionable Insights & Recommendations
 ## Data Exploration and Analysis
 
 ### a. Initial Exploration
