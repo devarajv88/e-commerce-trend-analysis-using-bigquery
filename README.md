@@ -2,4 +2,4 @@
 <br>
 Context:
 <br>
-A globally recognized e-commerce retailer, acknowledged for its exceptional value, innovation, and customer experience, is the subject of this business case. The focus is on the retailer's operations in Brazil, examining a dataset encompassing 100,000 orders spanning 2016-2018. The data provides a comprehensive perspective on order status, pricing, payment and freight performance, customer locations, product attributes, and reviews. Analyzing this dataset yields valuable insights into the retailer's Brazilian operations, covering order processing, pricing strategies, payment and shipping efficiency, customer demographics, product characteristics, and satisfaction levels.
+This project focuses on analyzing the operations of a leading e-commerce retailer in Brazil. The dataset, comprising eight CSV files, provides a comprehensive view of 100,000 orders placed between 2016 and 2018. The analysis aims to extract valuable insights and offer actionable recommendations for the company.
