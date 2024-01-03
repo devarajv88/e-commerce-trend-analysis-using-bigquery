@@ -31,7 +31,7 @@ The dataset is available in the [Google Drive folder](https://drive.google.com/d
 8. **products.csv**: Product information, including IDs, categories, name lengths, description lengths, photos, weights, lengths, heights, and widths.
 
 ## Dataset schema
-Dataset schema for the data provided above can be acced from [**here**](https://drive.google.com/file/d/1fMIzsB2AN5Cwu8EUt8bU3LYUc6w3NCI-/view?usp=drive_link)
+Dataset schema for the data provided above is shown below:
 
 ![schema](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/73c0c8c7-57f0-480a-9cb2-8c187aa66e68)
 
