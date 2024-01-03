@@ -9,8 +9,9 @@ This project focuses on analyzing the operations of a leading e-commerce retaile
 1. [Problem Statement](#problem-statement)
 2. [Dataset](#dataset)
 3. [Dataset schema](#Dataset-schema)
-4. [Data Exploration and Analysis](#Data-Exploration-and-Analysis)
-5. [Actionable Insights & Recommendations](#actionable-insights--recommendations)
+4. [Tech Stack](#Tech-Stack)
+5. [Data Exploration and Analysis](#Data-Exploration-and-Analysis)
+6. [Actionable Insights & Recommendations](#actionable-insights--recommendations)
 
 ## Problem Statement
 
@@ -31,6 +32,16 @@ The dataset is available in the [Google Drive folder](https://drive.google.com/d
 
 ## Dataset schema
 Dataset schema for the data provided above can be acced from [**here**](https://drive.google.com/file/d/1fMIzsB2AN5Cwu8EUt8bU3LYUc6w3NCI-/view?usp=drive_link)
+
+## Tech Stack
+
+- **SQL:** Used for querying the dataset and extracting relevant information.
+- **Python:** Utilized for additional data analysis, visualization, and processing.
+  - **Libraries**:
+    - **Pandas**: Data manipulation and analysis.
+    - **NumPy**: Numerical operations and array handling.
+    - **Matplotlib**: Plotting visualizations.
+    - **Seaborn**: Enhancing the aesthetics of visualizations.
 ## Data Exploration and Analysis
 
 ### a. Initial Exploration
