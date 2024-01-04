@@ -30,6 +30,24 @@ The dataset is available in the [Google Drive folder](https://drive.google.com/d
 7. **reviews.csv**: Customer reviews with review IDs, order IDs, scores, titles, comments, and timestamps.
 8. **products.csv**: Product information, including IDs, categories, name lengths, description lengths, photos, weights, lengths, heights, and widths.
 
+The column description for these csv files is given below.
+
+![1](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/a3261d6b-0f02-4f46-992b-90b9ceb33a13)
+
+![2](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/09b2c04a-b849-486e-be54-4b30854969a0)
+
+![3](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/8affcd08-decc-4645-8259-00c16a8c6e65)
+
+![4](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/a2c6261e-ecd1-4b15-b69e-1733726464c3)
+
+![5](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/2c9b6de3-8aef-444b-97a5-954e4f10e96a)
+
+![6](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/ed8738bb-f921-40a0-8494-5ab6f38d671a)
+
+![7](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/994e4357-4f9d-4b9c-a20a-4727b00e8c1c)
+
+![8](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/014269a8-c02b-437f-853e-1279d63a23a0)
+
 ## Dataset schema
 Dataset schema for the data provided above is shown below:
 
