@@ -40,11 +40,11 @@ The column description for these csv files is given below.
 
 ![4](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/a2c6261e-ecd1-4b15-b69e-1733726464c3)
 
-![5](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/2c9b6de3-8aef-444b-97a5-954e4f10e96a)
+![5](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/0f1dfced-f72d-493b-b353-4abb0ee46bd2)
 
 ![6](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/ed8738bb-f921-40a0-8494-5ab6f38d671a)
 
-![7](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/994e4357-4f9d-4b9c-a20a-4727b00e8c1c)
+![7](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/38a184fe-3406-4c99-ba0d-5c243e0e421c)
 
 ![8](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/014269a8-c02b-437f-853e-1279d63a23a0)
 
