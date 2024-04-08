@@ -3,19 +3,85 @@
 
 
 ## Overview
-This project focuses on analyzing the operations of a leading e-commerce retailer in Brazil. The dataset, comprising eight CSV files, provides a comprehensive view of 100,000 orders placed between 2016 and 2018. The analysis aims to extract valuable insights and offer actionable recommendations for the company.
+This project focuses on analyzing the operations of a leading e-commerce retailer (Target) in Brazil. The dataset, comprising eight CSV files, provides a comprehensive view of 100,000 orders placed between 2016 and 2018. The analysis aims to extract valuable insights and offer actionable recommendations for the company.
 
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
-2. [Dataset](#dataset)
-3. [Dataset schema](#Dataset-schema)
-4. [Tech Stack](#Tech-Stack)
-5. [Data Exploration and Analysis](#Data-Exploration-and-Analysis)
-6. [Actionable Insights & Recommendations](#actionable-insights--recommendations)
+2. [Key Analytical Inquiries](#key-analytical-inquiries)
+3. [Dataset](#dataset)
+4. [Dataset schema](#dataset-schema)
+5. [Tech Stack](#tech-stack)
 
 ## Problem Statement
 
 As a data analyst/scientist at the e-commerce retailer, the objective is to analyze the dataset and derive insights for the company. The analysis is structured into various sections, including initial exploration, in-depth exploration, evolution of e-commerce orders, impact on the economy, and analysis based on payments.
+
+## Key Analytical Inquiries
+Through a series of insightful questions, we navigate the dataset's depths, driven by curiosity and the quest for knowledge.
+
+1. Check the structure & characteristics of the dataset:
+
+    a. Data type of all columns in the "customers" table.
+    
+    b. Get the time range between which the orders were placed.
+
+    c. Count the Cities & States of customers who ordered during the given period.
+
+2. In-depth Exploration:
+
+    a. Is there a growing trend in the no. of orders placed over the past years?
+
+    b. Can we see some kind of monthly seasonality in terms of the no. of orders being placed?
+
+    c. During what time of the day, do the Brazilian customers mostly place their orders? (Dawn, Morning, Afternoon or Night)
+
+        i. 0-6 hrs : Dawn
+        
+        ii. 7-12 hrs : Mornings
+        
+        iii. 13-18 hrs : Afternoon
+        
+        iv. 19-23 hrs : Night
+
+3. Evolution of E-commerce orders in the Brazil region:
+
+    i. Get the month on month no. of orders placed in each state.
+
+    ii. How are the customers distributed across all the states?
+
+4. Impact on Economy: Analyze the money movement by e-commerce by looking at order prices, freight and others.
+
+    i. Get the % increase in the cost of orders from year 2017 to 2018 (include months between Jan to Aug only). We can use the "payment_value" column in the payments table to get the cost of orders.
+
+    ii. Calculate the Total & Average value of order price for each state.
+
+    iii. Calculate the Total & Average value of order freight for each state.
+
+5. Analysis based on sales, freight and delivery time.
+
+    i. Find the no. of days taken to deliver each order from the order’s purchase date as delivery time. Also, calculate the difference (in days) between the estimated & actual delivery date of an order. Do this in a single query.
+
+       We can calculate the delivery time and the difference between the estimated & actual delivery date using the given formula:
+
+        * time_to_deliver = order_delivered_customer_date - order_purchase_timestamp
+
+        * diff_estimated_delivery = order_delivered_customer_date - order_estimated_delivery_date
+
+    ii. Find out the top 5 states with the highest & lowest average freight value.
+
+    iii. Find out the top 5 states with the highest & lowest average delivery time.
+
+    iv. Find out the top 5 states where the order delivery is really fast as compared to the estimated date of delivery.
+
+    We can use the difference between the averages of actual & estimated delivery date to figure out how fast the delivery was for each state.
+
+6. Analysis based on the payments:
+
+    i. Find the month on month no. of orders placed using different payment types.
+
+    ii. Find the no. of orders placed on the basis of the payment installments that have been paid.
+
+
 
 ## Dataset
 
@@ -30,116 +96,10 @@ The dataset is available in the [Google Drive folder](https://drive.google.com/d
 7. **reviews.csv**: Customer reviews with review IDs, order IDs, scores, titles, comments, and timestamps.
 8. **products.csv**: Product information, including IDs, categories, name lengths, description lengths, photos, weights, lengths, heights, and widths.
 
-The column description for these csv files is given below.
-
-![1](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/a3261d6b-0f02-4f46-992b-90b9ceb33a13)
-
-![2](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/09b2c04a-b849-486e-be54-4b30854969a0)
-
-![3](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/8affcd08-decc-4645-8259-00c16a8c6e65)
-
-![4](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/a2c6261e-ecd1-4b15-b69e-1733726464c3)
-
-![5](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/0f1dfced-f72d-493b-b353-4abb0ee46bd2)
-
-![6](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/ed8738bb-f921-40a0-8494-5ab6f38d671a)
-
-![7](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/38a184fe-3406-4c99-ba0d-5c243e0e421c)
-
-![8](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/014269a8-c02b-437f-853e-1279d63a23a0)
-
 ## Dataset schema
-Dataset schema for the data provided above is shown below:
-
-![schema](https://github.com/devarajv88/e-commerce-trend-analysis-using-bigquery/assets/63098473/73c0c8c7-57f0-480a-9cb2-8c187aa66e68)
-
+Dataset schema for the data provided above can be acced from [**here**](https://drive.google.com/file/d/1fMIzsB2AN5Cwu8EUt8bU3LYUc6w3NCI-/view?usp=drive_link)
 
 ## Tech Stack
 
 - **SQL:** Used for querying the dataset and extracting relevant information.
-- **Python:** Utilized for additional data analysis, visualization, and processing.
-  - **Libraries**:
-    - **Pandas**: Data manipulation and analysis.
-    - **NumPy**: Numerical operations and array handling.
-    - **Matplotlib**: Plotting visualizations.
-    - **Seaborn**: Enhancing the aesthetics of visualizations.
-## Data Exploration and Analysis
-
-### a. Initial Exploration
-
-#### SQL Query:
-```sql
--- SQL query for delivery time analysis
-SELECT order_id,
-       order_delivered_customer_date - order_purchase_timestamp AS time_to_deliver,
-       order_estimated_delivery_date - order_delivered_customer_date AS diff_estimated_delivery
-FROM orders;
-```
-### b. In-depth Exploration
-
-#### SQL Query:
-```sql
--- SQL query for delivery time analysis
-SELECT order_id,
-       order_delivered_customer_date - order_purchase_timestamp AS time_to_deliver,
-       order_estimated_delivery_date - order_delivered_customer_date AS diff_estimated_delivery
-FROM orders;
-```
-### c. Evolution of E-commerce Orders in Brazil
-
-#### SQL Query:
-```sql
--- SQL query for delivery time analysis
-SELECT order_id,
-       order_delivered_customer_date - order_purchase_timestamp AS time_to_deliver,
-       order_estimated_delivery_date - order_delivered_customer_date AS diff_estimated_delivery
-FROM orders;
-```
-### d. Impact on Economy
-
-#### SQL Query:
-```sql
--- SQL query for delivery time analysis
-SELECT order_id,
-       order_delivered_customer_date - order_purchase_timestamp AS time_to_deliver,
-       order_estimated_delivery_date - order_delivered_customer_date AS diff_estimated_delivery
-FROM orders;
-```
-### e. Analysis on Sales, Freight and Delivery Time
-
-#### SQL Query:
-```sql
--- SQL query for delivery time analysis
-SELECT order_id,
-       order_delivered_customer_date - order_purchase_timestamp AS time_to_deliver,
-       order_estimated_delivery_date - order_delivered_customer_date AS diff_estimated_delivery
-FROM orders;
-```
-
-
-### f. Analysis Based on Payments
-
-#### SQL Query:
-```sql
--- SQL query for delivery time analysis
-SELECT order_id,
-       order_delivered_customer_date - order_purchase_timestamp AS time_to_deliver,
-       order_estimated_delivery_date - order_delivered_customer_date AS diff_estimated_delivery
-FROM orders;
-```
-
-
-## Actionable Insights & Recommendations
-
-#### 1. Abcdef
-- Step 1
-- Step 2
-#### 1. Abcdef
-- Step 1
-- Step 2
-#### 1. Abcdef
-- Step 1
-- Step 2
-#### 1. Abcdef
-- Step 1
-- Step 2
+- **Tableau:** Utilized for additional data analysis and visualization.
